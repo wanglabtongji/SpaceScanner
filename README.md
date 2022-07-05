@@ -3,6 +3,8 @@
 
 SpareTME is a toolkit to recognize spatial patterns in TME by combining image data and ST data. Currently, SpareTME supports TLS identification from 10X Visium ST data. To be specific, H&E images are first converted to grayscale, and the darker loci could be extracted as the potential TLSs. Then the deconvolved cell-type compositions of spots within the extracted region are checked, and the darker loci with high percentage of lymphocytes (B and T) are considered as TLSs. 
 
+![avatar](TLS_workflow.png)
+
 ## System requirements
 * Python (>= 3.7) 
 * numpy, pandas, matplotlib, scikit-image (== 0.19.2)
