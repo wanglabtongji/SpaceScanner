@@ -1,7 +1,7 @@
 # Scanner
-Scanner of specific spatial patterns in tissues by combining spatial transcriptomics and images
+***Scanner*** of specific spatial patterns in tissues by combining spatial transcriptomics and images
 
-Scanner is a toolkit to recognize specific spatial patterns in tissues, such as tertiary lymphoid structures (TLS) and tumor boundary, by combining image data and ST data. Currently, Scanner supports TLS identification from 10X Visium ST data. To be specific, H&E images are first converted to grayscale, and the darker loci could be extracted as the potential TLSs. Then the [STRIDE](https://github.com/wanglabtongji/STRIDE)-deconvolved cell-type compositions of spots within the extracted region are checked, and the darker loci with high percentage of lymphocytes (B and T) are considered as TLSs. 
+Scanner is a toolkit to recognize specific spatial patterns in tissues, such as tertiary lymphoid structures (TLS) and tumor boundary, by combining image data and ST data. Currently, Scanner supports TLS identification from 10X Visium ST data. To be specific, H&E images are first converted to grayscale, and the darker loci could be extracted as the potential TLSs. Then the [STRIDE](https://github.com/wanglabtongji/STRIDE)-deconvolved cell-type compositions of spots within the extracted region are checked, and the darker loci with high percentage of lymphocytes (B and T) are considered as TLSs. The whole workflow   can be adjusted to identify other specific patterns in other tissues.
 
 ![avatar](TLS_workflow.png)
 
